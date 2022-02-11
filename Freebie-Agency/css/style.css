@@ -110,10 +110,13 @@ table {
 }
 
 
+
 .wrapper{
     max-width: 1170px;
     margin: 0 auto;
 }
+
+
 
 /* Header styles start */
 
@@ -176,4 +179,112 @@ table {
     width: 54.91px;
 }
 
-/* Header styles start */
+/* Header styles end */
+
+
+
+/* Hero styles start */
+
+.hero{
+    height: 100vh;
+    background: url(../img/HERO.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.hero__title{
+    padding-top: 383px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    text-align: center;
+    line-height: 107px;
+    letter-spacing: 4.608px;
+    color: #FFFFFF;
+    margin-bottom: 24.5px;
+}
+
+.hero__subtitle{
+    font-family: OpenSans;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 1.28px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-bottom: 303.5px;
+}
+
+.slide-controls__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.slide-control{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 1.152px;
+    color: rgba(255, 255, 255, 0.437245);
+    padding-right: 8.99px;
+    position: relative;
+    transition: 0.5s all;
+}
+
+.slide-control:last-child{
+    padding-right: 0;
+}
+
+.slide-control::before{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 9.98px;
+    height: 2px;
+    left: 0px;
+    top: 24px;
+    background: #4CAF50;
+    transition: 0.8s;
+}
+
+.slide-control::before{
+    opacity: 0;
+}
+
+.slide-control::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 39.93px;
+    height: 2px;
+    left: 0;
+    top: 24px;
+    background: #4CAF50;
+    transition: 0.8s;
+}
+
+.slide-control::after{
+    opacity: 0;
+}
+
+.slide-control:hover, .slide-control:focus{
+    color: #FFFFFF;
+}
+
+.slide-control:active{
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: 2.304px;
+    color: #FFFFFF;
+}
+
+.slide-control:active:before, .slide-control:active:after{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* Hero styles end */
